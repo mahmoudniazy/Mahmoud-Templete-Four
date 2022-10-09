@@ -1,0 +1,360 @@
+:root {
+    --blue-color : #0075ff;
+    --blue--alt-color : #0d69d5;
+    --orange-color : #f59e0b;
+    --green-color : #22c55e;
+    --red-color : #f44336;
+    --grey-color : #888;
+    --grey-ddd-color : #ddd;
+}
+/* -----------------------------------start component  */
+.flex-com {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+}
+/* start toggle switch  */
+.check-box {
+    --webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch {
+    width: 60px;
+    height: 26px;
+    background-color: #888;
+    border-radius: 16px;
+    position: relative;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00d";
+    position: absolute;
+    font-weight: 900;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    top: 3px;
+    left: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.check-box:checked + .toggle-switch {
+    background-color: var(--green-color);
+}
+.check-box:checked + .toggle-switch::before {
+    content: "\f00c";
+    color: var(--green-color);
+    transform: translateX(35px);
+    -webkit-transform: translateX(34px);
+    -moz-transform: translateX(35px);
+    -ms-transform: translateX(35px);
+    -o-transform: translateX(35px);
+}
+/* end toggle switch  */
+/* h2 line  */
+.h2-line::before,
+.h2-line::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: -15px;
+    left: 0;
+}
+.h2-line::before {
+    background-color: white;
+    width: 120px;
+}
+.h2-line::after {
+    background-color: black;
+    width: 40px;
+}
+/* start vip com */
+.vip {
+    position: relative;
+}
+.vip::after {
+    content: "VIP";
+    position: absolute;
+    font-weight: bolder;
+    font-size: 30px;
+    right: 0;
+    bottom: 30px;
+    animation: flash 1s linear infinite;
+    -webkit-animation: mo 1.5s linear infinite;
+}
+@keyframes mo {
+    0% {
+        color: white;
+}
+    100% {
+        color: rgb(245 158 11 /.3);
+}
+}
+/* end vip com */
+/* -----------------------------------end component  */
+/* -----------------------------------start box properities  */
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.d-grid {
+    display: grid;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-5 {
+    gap: 5px;
+}
+.align-center {
+    align-items: center;
+}
+.just-c {
+    justify-content: center;
+}
+.just-space-b {
+    justify-content: space-between;
+}
+.txt-c {
+    text-align: center;
+}
+.box-shad {
+    box-shadow: 0 0 10px #ddd ;
+}
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.over-f {
+    overflow: hidden;
+}
+/* -----------------------------------end box properities  */
+/* -----------------------------------start padding ,margin  */
+.p-20 {
+    padding: 20px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-5 {
+    padding: 5px;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.ml-0 {
+    margin-left: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.m-10 {
+    margin: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.m-auto {
+    margin: auto;
+}
+/* -----------------------------------end padding ,margin  */
+/* -----------------------------------start colors  */
+.bg-white {
+    background-color: white;
+}
+.bg-eee {
+    background-color: #eee;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.bg-grey {
+    background-color: var(--grey-ddd-color);
+}
+.bg-orange {
+    background-color: var(--orange-color);
+}
+.bg-green {
+    background-color: var(--green-color);
+}
+.bg-red {
+    background-color: var(--red-color);
+}
+.c-black {
+    color: black;
+}
+.c-gray {
+    color: var(--grey-color);
+}
+.c-white {
+    color: white;
+}
+.c-blue {
+    color: var(--blue-color);
+}
+.c-orange {
+    color: var(--orange-color);
+}
+.c-green {
+    color: var(--green-color);
+}
+.c-red {
+    color: var(--red-color);
+}
+/* -----------------------------------end colors  */
+/* -----------------------------------start position */
+.p-rel {
+    position: relative;
+}
+.p-abs {
+    position: absolute;
+}
+/* -----------------------------------end position */
+/* -----------------------------------start border  */
+.border-1 {
+    border: 1px solid black;
+}
+.border-ddd {
+    border: 1px solid #ddd;
+}
+.border-3-w {
+    border: 3px solid white;
+}
+.b-rad10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.b-rad7 {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+/* -----------------------------------end border  */
+/* -----------------------------------start font  */
+.fs-14 {
+    font-size: 14px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-12 {
+    font-size: 13px;
+}
+.fs-11 {
+    font-size: 11px;
+}
+.fs-10 {
+    font-size: 10px;
+}
+.bold-fw {
+    font-weight: bold;
+}
+/* -----------------------------------end font  */
+/* -----------------------------------start medias  */
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none;
+    }
+    .txt-c-mob {
+        text-align: center;
+    }
+    .block-mob {
+        display: block;
+    }
+    .flex-column {
+        flex-direction: column;
+    }
+    .flex-column-r {
+        flex-direction: column-reverse;
+    }
+}
+/* -----------------------------------end medias  */
